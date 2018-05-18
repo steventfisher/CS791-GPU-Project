@@ -1,0 +1,4 @@
+AS16509, CPU Execution time (sec),                  0.261324, Num Vertices, 4900, Num Ingress, 100
+AS16509, CUDA Single Device Execution time (sec),   0.112601, Num Vertices, 4900, Num Ingress, 100
+AS41391, CPU Execution time (sec),                  0.245226, Num Vertices, 4800, Num Ingress, 100
+AS41391, CUDA Single Device Execution time (sec),   0.119523, Num Vertices, 4800, Num Ingress, 100
