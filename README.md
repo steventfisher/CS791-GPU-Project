@@ -1,12 +1,15 @@
+#BFS and Bellman-Ford GPU Implementations
 
 NOTE: These were all compiled using nvcc 9.0 and g++ 6.4
 NOTE: The python version used was 2.7.14
 
 The following is include in this folder:
+```
 BFS <- this contains the code for the Breadth-First Search algorithm
 BellmanFord <- this contains the code for the Breadth-First Search algorithm
+```
 
-BFS
+#BFS
 The BFS folder contains the build directory, data directory and src directory
 I have also include the bin directory.  If you would like to recompile, there
 is a MakeFile in the build directory.
@@ -22,15 +25,21 @@ Copy all of the brite files to the data directory.
 
 Once the data set is either downloaded or constructed, run the bfs 
 program in the bin directory.
+```
+bin/bfs
+```
 
 
-Bellman-Ford
+#Bellman-Ford
 The BellmanFord folder contains the build directory, data directory and src directory
 I have also include the bin directory.  If you would like to recompile, there
 is a MakeFile in the build directory.
 
 To run the Bellman-Ford, you will need python. From there you can run the
 runFile script within the bin folder.
+```
+runFile
+```
 
 Within the data, directory I have three files. 
 britegen.py generates the data set
