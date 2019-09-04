@@ -1,4 +1,4 @@
-#BFS and Bellman-Ford GPU Implementations
+# BFS and Bellman-Ford GPU Implementations
 
 NOTE: These were all compiled using nvcc 9.0 and g++ 6.4
 NOTE: The python version used was 2.7.14
@@ -9,7 +9,7 @@ BFS <- this contains the code for the Breadth-First Search algorithm
 BellmanFord <- this contains the code for the Breadth-First Search algorithm
 ```
 
-#BFS
+# BFS
 The BFS folder contains the build directory, data directory and src directory
 I have also include the bin directory.  If you would like to recompile, there
 is a MakeFile in the build directory.
@@ -30,7 +30,7 @@ bin/bfs
 ```
 
 
-#Bellman-Ford
+# Bellman-Ford
 The BellmanFord folder contains the build directory, data directory and src directory
 I have also include the bin directory.  If you would like to recompile, there
 is a MakeFile in the build directory.
