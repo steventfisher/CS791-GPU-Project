@@ -1,7 +1,9 @@
 # BFS and Bellman-Ford GPU Implementations
 
+```
 NOTE: These were all compiled using nvcc 9.0 and g++ 6.4
 NOTE: The python version used was 2.7.14
+```
 
 The following is include in this folder:
 ```
