@@ -39,6 +39,12 @@ BFS/
     ├── Topology.h
     └── vertex.h
 ```
+To begin run the Makefile
+```
+cd build
+make
+```
+This will generate the executable within the bin directory
 
 ## Data Set Generation
 Within the data, directory I have three files. 
