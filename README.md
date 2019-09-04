@@ -12,13 +12,45 @@ BellmanFord <- this contains the code for the Breadth-First Search algorithm
 ```
 
 # BFS
-The BFS folder contains the build directory, data directory and src directory
-I have also include the bin directory.  If you would like to recompile, there
-is a MakeFile in the build directory.
+The BFS folder contains the following 
+``` bash
+BFS/
+├── bin
+│   ├── bfs
+│   └── timings.txt
+├── BRITE
+│   ├── File for BRITE Topology Generation
+├── build
+│   ├── Makefile
+├── data
+│   ├── britegen.py
+│   ├── dataFile.txt
+│   └── nodeFile.txt
+├── Makefile
+└── src
+    ├── bfs_kernel.cu
+    ├── Graph.cpp
+    ├── GraphData.h
+    ├── Graph.h
+    ├── main.cpp
+    ├── main.cpp.old
+    ├── README
+    ├── Topology.cpp
+    ├── Topology.h
+    └── vertex.h
+```
+
+## Data Set Generation
 Within the data, directory I have three files. 
 britegen.py generates the data set
 nodeFile.txt is used by britegen.py
 dataFile.txt is used by the main program.
+
+To generate the data set run:
+```
+cd data/
+python britegen.py
+```
 
 NOTE: It takes a lot of time to generate the data.  If you would like 
 here is a dropbox link for the dataset 
@@ -28,26 +60,56 @@ Copy all of the brite files to the data directory.
 Once the data set is either downloaded or constructed, run the bfs 
 program in the bin directory.
 ```
-bin/bfs
+cd bin/
+./bfs
 ```
 
 
 # Bellman-Ford
-The BellmanFord folder contains the build directory, data directory and src directory
-I have also include the bin directory.  If you would like to recompile, there
-is a MakeFile in the build directory.
+The BellmanFord folder contains the following directory structure.
+``` bash
+BellmanFord/
+├── bin
+│   ├── runFiles.py
+├── BRITE
+│   ├── File for BRITE Topology Generation
+├── build
+│   └── Makefile
+├── data
+│   ├── britegen.py
+│   ├── dataFile.txt
+│   ├── edgetoadjmat.py
+│   └── nodeFile.txt
+└── src
+    ├── cuda_bellman_ford.cu
+    ├── README
+    └── serial_bellman_ford.cpp
+```
+To begin run the Makefile
+```
+build/make
+```
 
-To run the Bellman-Ford, you will need python. From there you can run the
+Then to run the Bellman-Ford, you will need python. Then you will need data in the .brite format. From there you can run the
 runFile script within the bin folder.
 ```
-runFile
+cd bin/
+python runFile
 ```
 
-Within the data, directory I have three files. 
+## Data Set Generation
+Within the data, directory I have four files. 
+```
 britegen.py generates the data set
 edgetoadjmat.py which converts the edge list from brite to and adajency matrix
 nodeFile.txt is used by britegen.py
 dataFile.txt is used by the main program.
+```
+To generate the data sets run:
+```
+cd data/
+python britegen.py
+```
 
 NOTE: It takes a lot of time to generate the data.  If you would like 
 here is a dropbox link for the dataset
